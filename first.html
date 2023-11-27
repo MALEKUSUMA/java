@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>.f{
+        border:10px solid green;
+        margin:2px;
+        text-align:center;
+    }
+     label textarea{
+            vertical-align: middle;
+        }
+    .button {
+      transition-duration: 0.4s;
+    }
+    
+    .button:hover {
+      background-color:black;
+      color: white;
+       font-size: 16px;
+      margin: 4px 2px;
+    }
+    
+        </style>
+    
+       
+</head>
+<body>
+    
+    <body bgcolor="lavender">
+        <h3 align="center">Registration Form</h3>
+        <form name="f" align="center" >
+         <br>
+          <b>Name:</b><input type="text"  name ="name" placeholder="Enter your name here!"  minlength="10" /><br>
+        <br>
+        <b>Password:</b><input type="password" name="pass" placeholder="Enter strong password" minlength="6" required /><br><br>
+           <b> <label for="email">Email:</label></b>
+          <input type="email" id="email" name="email" placeholder="Enter your email-address" required/><br><br>
+        <input type="submit" name="submit" value="Check-Email" onclick="validateEmail(document.f.email)"/><br><br>
+          <b>Phone No:</b><input type="text" placeholder="Enter your mobile number" maxlength="10" pattern="\d{10}" required/>
+        <br>
+        <br>
+        <b>Gender:</b><input type="radio" name="1">Male</input>
+        <input type="radio" name="1">Female</input>
+        <input type="radio" name="1">Others</input><br><br>
+        <b>Languages known:</b>
+        <input type="checkbox" name="a">Telugu</input>
+        <input type="checkbox" name="b">English</input>
+        <input type="checkbox" name="c">Hindi</input>
+        <input type="checkbox" name="d">Tamil</input><br><br>
+        <label><b>Address:</b>
+        <textarea  rows="10" cols="30"></textarea></label><br>
+          <br>
+        <button class="button" onclick="return validateForm()">Submit</button><br><br>
+        
+        </form>
+        
+    
+        
+
+    
+
+
+    
+</body>
+</html>
